@@ -9,7 +9,11 @@ const AllTodos = async () => {
     <>
       <div className="flex flex-wrap">
         {titleDetails.map((titles) => (
-          <TodoCard title={titles.title} key={titles._id} />
+          <TodoCard
+            title={titles.title}
+            titleId={titles._id}
+            key={titles._id}
+          />
         ))}
       </div>
     </>
